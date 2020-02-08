@@ -7,7 +7,7 @@ marked.setOptions({
   breaks: true,
 });
 
-class ControledInput extends React.Component {
+class App extends React.Component {
   constructor (props) {
     super(props);
     this.state={
@@ -82,8 +82,8 @@ __Some bold text__
 `
 
 ReactDOM.render(
-  <ControledInput />,
+  <App/>,
   document.getElementById("content")
 );
 
-export default ControledInput;
+export default App;
