@@ -7,7 +7,7 @@ marked.setOptions({
   breaks: true,
 });
 
-class ControledInput extends React.Component {
+class App extends React.Component {
   constructor (props) {
     super(props);
     this.state={
@@ -32,9 +32,19 @@ class ControledInput extends React.Component {
          </div>
 
         <Preview marked={this.markDown()}/>
+
+        <BackArrow />
       </div>
     )
   }
+}
+
+const BackArrow = () => {
+  return (
+    <div id="backwards" className="panel panel-primary">
+      <div className="panel-heading text-center"><h2><a href="http://ahaf-dev.com"><i className="fa fa-backward"/>  ahaf-dev</a></h2></div>
+    </div>
+  )
 }
 
 const Editor = (props) => {
@@ -82,8 +92,8 @@ __Some bold text__
 `
 
 ReactDOM.render(
-  <ControledInput />,
+  <App/>,
   document.getElementById("content")
 );
 
-export default ControledInput;
+export default App;
