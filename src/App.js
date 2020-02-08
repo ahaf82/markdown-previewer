@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import marked from 'marked';
-import logo from './logo.svg';
 import './App.css';
 
 marked.setOptions({
