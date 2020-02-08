@@ -32,9 +32,19 @@ class App extends React.Component {
          </div>
 
         <Preview marked={this.markDown()}/>
+
+        <BackArrow />
       </div>
     )
   }
+}
+
+const BackArrow = () => {
+  return (
+    <div class ="panel panel-primary">
+      <a href="http://ahaf-dev.com"><i className="fas fa-backward"></i>Back to ahaf-dev</a>
+    </div>
+  )
 }
 
 const Editor = (props) => {
