@@ -3,7 +3,11 @@
   "name": "Create React App",
   "icons": [
     {
+<<<<<<< HEAD
       "src": "markdown-icon.ico",
+=======
+      "src": "markdown-icon.PNG",
+>>>>>>> f16f6c7a802a4f4c282ca14f390f78f11fd693fb
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
